@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileSettingActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/bg"
+            >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:src="@drawable/ic_back" />
+
+            <com.smirk.customView.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Profile Settings"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/margin_sp16">
+            <com.smirk.customView.PoppinsMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Laugh with"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/margin_sp16" />
+            <com.smirk.customView.PoppinsMTextView
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/ic_et_bg"
+                android:hint="Just friends"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/txtColor"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+            <com.smirk.customView.PoppinsMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Interested in"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/margin_sp16" />
+            <com.smirk.customView.PoppinsMTextView
+                android:id="@+id/etDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/ic_et_bg"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/hint_color"
+                android:paddingRight="10dp"
+                android:text="Female"
+                android:textColor="@color/txtColor"
+               />
+            <com.smirk.customView.PoppinsMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Age Range"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/margin_sp16" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:id="@+id/tvmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="0"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black_light"
+                    android:textSize="16sp" />
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:id="@+id/tvmax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:text="100"
+                    android:textColor="@color/black_light"
+                    android:textSize="16sp" />
+
+                <it.mirko.rangeseekbar.RangeSeekBar
+                    android:id="@+id/rangeSeekBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/tvmax"
+                    android:layout_toRightOf="@id/tvmin" />
+
+            </RelativeLayout>
+            <com.smirk.customView.PoppinsMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Maximum Distance"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/margin_sp16" />
+            <com.smirk.customView.PoppinsMTextView
+                android:id="@+id/etPronouns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="10"
+                android:textColorHint="@color/hint_color"
+                android:background="@drawable/ic_et_bg"
+                android:textColor="@color/txtColor"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.smirk.customView.PoppinsMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Preferred ethnicity"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/margin_sp16" />
+            <com.smirk.customView.PoppinsMTextView
+                android:id="@+id/etAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/ic_et_bg"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/hint_color"
+                android:textColor="@color/txtColor"
+                android:text="American Indian, Latino"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.smirk.customView.PoppinsMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Favorite TV Shows/Movies"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black_light"
+                android:textSize="@dimen/margin_sp16" />
+            <com.smirk.customView.PoppinsMTextView
+                android:id="@+id/etShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/ic_et_bg"
+                android:hint="Despicable Me, Friends"
+                android:textColor="@color/txtColor"
+                android:gravity="center_vertical"
+                android:drawableRight="@drawable/ic_down_arrow"
+                android:drawablePadding="10dp"
+                android:paddingLeft="10dp"
+                android:textColorHint="@color/hint_color"
+                android:paddingRight="10dp" />
+            <com.smirk.customView.PoppinsMButton
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ic_btn_bg"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

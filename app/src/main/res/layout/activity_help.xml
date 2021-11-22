@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.HelpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/bg"
+            >
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="26dp"
+                android:src="@drawable/ic_back" />
+
+            <com.smirk.customView.PoppinsBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/imgBack"
+                android:text="Help"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        </RelativeLayout>
+
+        <com.smirk.customView.PoppinsBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have a question?"
+            android:textColor="@color/black_light"
+            android:textSize="22sp"
+            android:layout_marginTop="41dp"
+            android:gravity="center"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/q_mark"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="29dp"/>
+
+        <com.smirk.customView.PoppinsRTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="If you have any questions, issues, or suggestions, feel free to message us anytime. Type your question below and we will contact you."
+            android:padding="@dimen/margin_sp16"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+
+            />
+
+        <com.smirk.customView.PoppinsMediumEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/ic_about"
+            android:gravity="top|left|center_vertical|center_horizontal|center|start"
+            android:hint="Type your query"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:textSize="@dimen/margin_sp16"
+            android:layout_marginLeft="@dimen/margin_sp16"
+            android:layout_marginRight="16dp"
+            android:maxLines="10"
+            android:minLines="6"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="16dp"
+            android:scrollbars="vertical" />
+
+        <com.smirk.customView.PoppinsMButton
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_btn_bg"
+            android:gravity="center"
+            android:text="Send"
+            android:textColor="@color/black_light"
+            android:layout_marginLeft="@dimen/margin_sp16"
+            android:layout_marginRight="@dimen/margin_sp16"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

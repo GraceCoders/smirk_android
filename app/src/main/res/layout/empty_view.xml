@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/clMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/art"/>
+        <com.smirk.customView.PoppinsBoldTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/margin_dp20"
+            android:textColor="@color/black_light"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="No Notification Received!"/>
+
+        <com.smirk.customView.PoppinsRTextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/margin_sp16"
+            android:textColor="@color/black_light"
+            android:layout_marginTop="9dp"
+            android:text="You have not received any notification yet."/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

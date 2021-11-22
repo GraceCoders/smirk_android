@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Smirk</string>
+    <string name="resend">Resend</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signout_msg">Are you sure you want to sign out from the app?</string>
+</resources>

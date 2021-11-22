@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <com.smirk.customView.PoppinsBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:gravity="center"
+            android:text="Enter Code"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+
+        <com.smirk.customView.PoppinsRTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="Please enter the code you received below"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:scrollbars="horizontal">
+           <com.goodiebag.pinview.Pinview
+               android:id="@+id/pinview1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginTop="46dp"
+               android:elevation="8dp"
+               app:cursorVisible="true"
+               app:hint=""
+               app:inputType="number"
+               app:password="false"
+               app:pinBackground="@drawable/ic_otp"
+               app:pinHeight="47dp"
+               app:pinLength="6"
+               app:pinWidth="40dp"
+               app:textSize="8dp" />
+       </ScrollView>
+
+        <com.smirk.customView.PoppinsMButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/ic_btn_bg"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@color/black_light"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <com.smirk.customView.PoppinsRTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="@string/resend"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

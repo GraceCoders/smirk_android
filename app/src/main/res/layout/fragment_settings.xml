@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".fragments.SettingsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/bg" />
+
+        <com.smirk.customView.PoppinsBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginTop="10dp"
+            android:text="Settings"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <RelativeLayout
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:src="@drawable/img6" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ic_camera" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlPersonal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_dp20"
+                    android:text="Personal Info"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/margin_sp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_dp20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_right_dropdown" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/line"
+                android:elevation="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlMatches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_dp20"
+                    android:text="Matches"
+                    android:textColor="@color/black_light"
+                    android:textSize="@dimen/margin_sp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_dp20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_right_dropdown" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/line"
+                android:elevation="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_dp20"
+                    android:text="Profile Settings"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_sp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_dp20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_right_dropdown" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/line"
+                android:elevation="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_dp20"
+                    android:text="Your Photos"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_sp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_dp20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_right_dropdown" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/line"
+                android:elevation="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_dp20"
+                    android:text="Terms &amp; Conditions"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_sp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_dp20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_right_dropdown" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/line"
+                android:elevation="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlPrivacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_dp20"
+                    android:text="Privacy Policy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_sp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_dp20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_right_dropdown" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/line"
+                android:elevation="1dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlHelp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_dp20"
+                    android:text="Help"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/margin_sp16" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/margin_dp20"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_right_dropdown" />
+
+
+            </RelativeLayout>
+
+            <com.smirk.customView.PoppinsMTextView
+                android:id="@+id/tvSignout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Logout"
+                android:textColor="@color/footer_bg"
+                android:textSize="@dimen/margin_sp16" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

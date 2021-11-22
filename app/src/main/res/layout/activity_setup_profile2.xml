@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_back" />
+
+                <com.smirk.customView.PoppinsBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Setup Profile"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <com.smirk.customView.PoppinsMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="Step 2 of 3"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <com.smirk.customView.PoppinsMediumEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_et_bg"
+                android:hint="First name*"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/margin_sp16"
+                android:paddingLeft="10dp" />
+
+            <com.smirk.customView.PoppinsMediumEditText
+                android:id="@+id/etDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_et_bg"
+                android:drawableRight="@drawable/ic_cal"
+                android:drawablePadding="10dp"
+                android:hint="D.O.B."
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/hint_color"
+                android:editable="false"
+                android:textSize="@dimen/margin_sp16"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.smirk.customView.PoppinsRTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Gender"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <com.smirk.customView.PoppinsRTextView
+                    android:id="@+id/tvMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_sex_bg"
+                    android:gravity="center"
+                    android:text="Male"
+                    android:textColor="@color/black_light"
+                    android:textSize="16sp" />
+
+                <com.smirk.customView.PoppinsRTextView
+                    android:id="@+id/tvFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_sex_unslected"
+                    android:gravity="center"
+                    android:text="Female"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <com.smirk.customView.PoppinsRTextView
+                    android:id="@+id/tvNon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_sex_unslected"
+                    android:gravity="center"
+                    android:text="Non-binary"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <com.smirk.customView.PoppinsMediumEditText
+                android:id="@+id/etPronouns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_et_bg"
+                android:hint="Preferred Pronouns"
+                android:textSize="@dimen/margin_sp16"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/hint_color"
+                android:paddingLeft="10dp" />
+
+            <com.smirk.customView.PoppinsMediumEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/ic_about"
+                android:gravity="top|left|center_vertical|center_horizontal|center|start"
+                android:hint="About"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/hint_color"
+                android:textSize="@dimen/margin_sp16"
+                android:maxLines="10"
+                android:minLines="6"
+                android:padding="10dp"
+                android:scrollbars="vertical" />
+
+            <com.smirk.customView.PoppinsMButton
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ic_btn_bg"
+                android:gravity="center"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/black_light"
+                android:textColorHint="@color/hint_color"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
